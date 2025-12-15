@@ -1,0 +1,32 @@
+name: "🙋 Ask a Question"
+description: Ask a question about the documentation.
+labels: ["Type/Question"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the question.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: If applicable, provide the version of the product documentation.
+    validations:
+      required: false
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Issues
+      description: Mention if there are any related issues.
+    validations:
+      required: false
+  - type: input
+    id: suggested
+    attributes:
+      label: Suggested Labels
+      description: Mention if there are any suggested labels.
+    validations:
+      required: false
